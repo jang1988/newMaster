@@ -1,0 +1,54 @@
+.add-post {
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: $secondary;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  &__textarea {
+    display: block;
+    font-family: inherit;
+    font-size: 15px;
+    color: $white;
+    width: 80%;
+    border: none;
+    background: transparent;
+    resize: none;
+    &::placeholder {
+      color: #d2d2d2;
+    }
+    &:focus {
+        outline: none;
+    }
+  }
+  &__form-actions {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  &__file,
+  &__send {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  &__file {
+      background: #ebebeb url("../images/btn-foto.svg") center no-repeat;
+      input {
+          display: none;
+      }
+  }
+  &__send {
+      background-color: $blue;
+      padding: 13px;
+  }
+  
+  
+}

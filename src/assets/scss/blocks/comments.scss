@@ -1,0 +1,59 @@
+.comments {
+  padding: 30px;
+  &__item {
+    margin-bottom: 30px;
+    >.comments {
+      margin-left: 30px;
+    }
+  }
+  
+
+  &__header {
+    display: flex;
+  }
+
+  &__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  &__autor {
+    flex-grow: 1;
+    padding-left: 15px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__pubdate {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    padding: 15px 0 5px;
+  }
+
+  &__reply {
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #107eff;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

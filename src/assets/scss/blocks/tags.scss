@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  &__item {
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+    background: #EA8C1E;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+  
+}

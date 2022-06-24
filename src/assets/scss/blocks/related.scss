@@ -1,0 +1,30 @@
+.related {
+  padding: 25px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  &__list-title {
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #f3eba2;
+    }
+  }
+
+  &__list-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #828282;
+  }
+}

@@ -1,0 +1,11 @@
+.page {
+    overflow: hidden;
+    &__title {
+        font-size: 21px;
+        color: $white;
+        margin-bottom: 30px;
+        &--center {
+            text-align: center;
+        }
+    }
+}

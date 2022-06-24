@@ -1,0 +1,41 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    &:hover {
+      .nav__link {
+        background-color: $blue;
+      }
+      > .subnav {
+        display: block;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    padding: 15px;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    &.has-subnav {
+      position: relative;
+      padding-right: 37px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: $white transparent transparent transparent;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

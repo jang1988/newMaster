@@ -1,0 +1,23 @@
+.cabinet {
+  display: flex;
+  gap: 100px;
+  &__form {
+    width: 340px;
+  }
+  &__avatar {
+    display: block;
+    flex-grow: 1;
+    padding-left: 11px;
+  }
+  &__file {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #107eff;
+    padding-left: 11px;
+    input {
+      display: none;
+    }
+  }
+}

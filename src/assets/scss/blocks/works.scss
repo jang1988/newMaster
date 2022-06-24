@@ -1,0 +1,42 @@
+.works {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: #202020;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  &__preview {
+    flex: 1.5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+  }
+  &__title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+    a {
+      color: inherit;
+    }
+  }
+  &__discription {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #d2d2d2;
+    margin-bottom: 30px;
+  }
+  &__footer {
+    margin-top: auto;
+    text-align: right;
+  }
+}
