@@ -5,6 +5,10 @@
   background: #202020;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+    margin: 20px;
+  }
   &__preview {
     flex: 1.5;
     img {

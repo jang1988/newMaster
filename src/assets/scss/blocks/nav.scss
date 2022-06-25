@@ -1,12 +1,27 @@
 .nav {
+  &--mobile {
+    display: none;
+    @include breakpoint($tablet-bp) {
+      display: block;
+    }
+  }
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
   &__list {
     display: flex;
+    @include breakpoint($tablet-bp) {
+      flex-direction: column;
+    }
   }
   &__item {
     position: relative;
     &:hover {
       .nav__link {
         background-color: $blue;
+        @include breakpoint($tablet-bp) {
+          background: inherit;
+        }
       }
       > .subnav {
         display: block;

@@ -37,6 +37,9 @@
   }
   &__content {
     padding: 30px;
+    @include breakpoint($mobile-bp) {
+      padding: 15px;
+    }
   }
   &__title {
     font-size: 18px;

@@ -7,6 +7,11 @@
     background-color: $blue;
     border-radius: 0 0 5px 5px;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    @include breakpoint($tablet-bp) {
+        position: static;
+        width: 100%;
+        background: inherit;
+    }
     &__link {
         display: block;
         font-size: 12px;
@@ -15,6 +20,9 @@
         margin:12px 12px;
         padding: 0 12px;
         transition: all .5s ease-in;
+        @include breakpoint($tablet-bp) {
+            padding: 15px ;
+        }
         &:hover {
             background-color: darken($blue, $amount: 5%);
             border-radius: 50%;

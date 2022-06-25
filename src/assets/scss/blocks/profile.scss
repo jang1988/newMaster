@@ -6,11 +6,19 @@
     border-radius: 50%;
     margin: 0 auto 2rem;
     position: relative;
+    @include breakpoint($tablet-bp) {
+        width: 6.5rem;
+        height: 6.5rem;
+        margin-left: 0;
+    }
 }
 
 .profile__name {
     font-size: 1.8rem;
     text-align: center;
+    @include breakpoint($tablet-bp) {
+        
+    }
 }
 
 .profile__prof {
@@ -28,4 +36,7 @@
     border-bottom: 1px solid #1c1c1c;
     padding: 3rem 0;
     margin: 3rem 0;
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }
